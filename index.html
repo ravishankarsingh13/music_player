@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>music player</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://kit.fontawesome.com/5c14fb59bd.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<div class="navigation">
+		<div>
+			<p class="logo"><img src="image/icons/music_icon.jpg" height="25px" width="25px"></p>
+			<span>NINJA <br>STUDIO</span>
+		</div>
+		<div>
+			<a href="#">Favorites</a>
+			<a href="#">Latest</a>
+			<a href="#">Artist</a>
+			<a href="#">Radio</a>
+		</div>
+		<div class="profile">
+			<img src="image/photo.jpg" height="50px" width="50px">
+		</div>
+		<div id="notification">
+			<span id="bell"><img src="image/icons/bell.png" height="20px" width="20px"></span>
+		</div>
+
+		<div class="search-container">
+	    	<form action="/action_page.php">
+	    		<div id="search">
+	    			<input type="text" placeholder="Search.." name="search">
+	      			<button type="submit"><img src="image/icons/search.png"></button>
+
+	    		</div>
+	      	
+	    	</form>
+		</div>
+				<div class="bars">
+			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+	        <img src="image/icons/menu-4-24.png">
+		</div>
+		
+	  </a>
+	</div>
+	<div id="main">
+		<div id="leftmain">
+			<section id="latest">
+				<div id="latest-release" class="popular mb50px">
+					<h1>Latest Release</h1>
+					<div class="new">
+						<div class="release">
+							<a href="data/unleashed.html"><img src="data/unleashed.jpeg"></a>
+						</div>
+					</div>
+				</div>
+				
+			</section>
+			<section id="pop">
+				<div id="artists" class="popular mb50px">
+					<h1>Popular Artists</h1>
+					<div class="performers">
+						<div class="artists">
+							<a href="data/unleashed.html"><img src="data/unleashed.jpeg"></a>
+							<div class="artist-name">
+								Unleashed
+							</div>
+						</div>
+						<div class="artists ">
+							<a href="data/unleashed.html"><img src="data/avicii.jpeg"></a>
+							<div class="artist-name avicii">
+								Avicii
+							</div>
+						</div>
+						<div class="artists">
+							<a href="data/unleashed.html"><img src="data/ed-sheeran.jpeg" ></a>
+							<div class="artist-name ed">
+								Ed-Sheeran
+							</div>
+						</div>
+						<div class="artists">
+							<a href="data/unleashed.html"><img src="data/shawn_mendes.jpeg"></a>
+							<div class="artist-name shawn">
+								Shawn
+							</div>
+						</div>
+						<div class="artists">
+							<a href="data/unleashed.html"><img src="data/Alka-yagnik-2.jpg"></a>
+							<div class="artist-name Alka">
+								Alka yagnik
+							</div>
+						</div>
+						<div class="artists">
+							<a href="data/unleashed.html"><img src="data/Sonu-nigam-1.jpg"></a>
+							<div class="artist-name sonu">
+								Sonu nigam
+							</div>
+						</div>
+						<div class="artists">
+							<a href="data/unleashed.html"><img src="data/lata-mangeshkar-3.jpg"></a>
+							<div class="artist-name lata">
+								Lata mangeshkar
+							</div>
+						</div>
+						<div class="artists">
+							<a href="data/unleashed.html"><img src="data/drake.jpeg"></a>
+							<div class="artist-name drake">
+								Drake
+							</div>
+						</div>
+						<div class="artists">
+							<a href="data/unleashed.html"><img src="data/david.jpeg"></a>
+							<div class="artist-name david">
+								David
+							</div>
+						</div>
+						<div class="artists">
+							<a href="data/unleashed.html"><img src="data/enrique-iglesias-4.jpg"></a>
+							<div class="artist-name enrique-iglesias-4">
+								enrique-iglesias
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="radio">
+				<div id="radio-channels" class="popular mt50px">
+					<h1>Radio Stations</h1>
+					<div class="channels">
+						<div class="stations">
+							<img src="data/love.png">
+							<!-- <h4>Love</h4> -->
+						</div>
+						<div class="stations">
+							<img src="data/chill.png">
+							<!-- <h4>Chill</h4> -->
+						</div>
+						<div class="stations">
+							<img src="data/pop.png">
+							<!-- <h4>Pop</h4> -->
+						</div>
+						<div class="stations">
+							<img src="data/workout.png">
+							<!-- <h4>Workout</h4> -->
+						</div>
+						<div class="stations">
+							<!-- <img src="image/station/retro-2.jpg"> -->
+							<!-- <h4>Retro</h4> -->
+						</div>
+						<div class="stations">
+							<img src="data/rock.png">
+							<!-- <h4>Rock</h4> -->
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="moodtoday">
+				<div id="moods" class="popular mt50px">
+					<h1>Mood today</h1>
+					<div class="genre">
+						<div class="mood">
+							<a href="https://gaana.com/occasion/party"><img src="data/party.png" ></a>
+						</div>
+						<div class="mood ">
+								<a href="https://gaana.com/search/electronic"><img src="data/electronic.png" ></a>
+								
+						</div>
+						<div class="mood">
+							<a href="https://gaana.com/search/road%20trip"><img src="data/road.png" ></a>
+								
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="Latest-English">
+				<div id="english" class="popular mt50px">
+					<h1>Latest English</h1>
+					<div class="latesteng">
+						<div class="Status">
+							<img src="image/Latest-english/Latest-english-1.jpg" alt="">
+						</div>
+						<div class="Status">
+							<img src="image/Latest-english/Latest-english-2.jpg" alt="">
+						</div>
+						<div class="Status">
+							<img src="image/Latest-english/Latest-english-3.jpg" alt="">
+						</div>
+						<div class="Status">
+							<img src="image/Latest-english/Latest-english-4.jpg" alt="">
+						</div>
+						<div class="Status">
+							<img src="image/Latest-english/Latest-english-5.jpg" alt="">
+						</div>
+						<div class="Status">
+							<img src="image/Latest-english/Latest-english-6.jpg" alt="">
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="latest-hindi">
+				<div id="hindi" class="popular mt50px">
+					<h1>Latest Hindi</h1>
+					<div class="latesthindi">
+						<div class="Status">
+							<img src="image/Latest-hindi/Latest-hindi-1.jpeg" alt="">
+						</div>
+						<div class="Status">
+							<img src="image/Latest-hindi/Latest-hindi-2.jpeg" alt="">
+						</div>
+						<div class="Status">
+							<img src="image/Latest-hindi/Latest-hindi-3.jpeg" alt="">
+						</div>
+						<div class="Status">
+							<img src="image/Latest-hindi/Latest-hindi-4.jpeg" alt="">
+						</div>
+						<div class="Status">
+							<img src="image/Latest-hindi/Latest-hindi-5.jpeg" alt="">
+						</div>
+						<div class="Status">
+							<img src="image/Latest-hindi/Latest-hindi-6.jpeg" alt="">
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+		<div id="rightmain">
+			
+		</div>
+	</div>
+
+	<!-- footer begin -->
+	<section id="footer">
+		<div id="left">
+	        <div id="foot">
+	        	<img src="image/faded.jpeg" height="50" width="50">
+	        	<span>Spectre</span>
+	        	<span id="name2">Alan Walker</span>
+	        	<span id="icon"><i class="fas fa-heart"></i></span>&emsp;&emsp;
+	        	<span id="icon"><i class="fas fa-ban"></i></span>
+	        </div>
+	     </div>
+	     <div id="mid">
+	     	<div class="timer">
+                    <div class="count-1">
+                        <p>1:12</p>
+                    </div>
+                    <div class="time-progress">
+                        <div class="progress thirty-five-percent mb-green">
+                        </div>
+                        <div class="bubble">
+                        </div>
+                    </div>
+
+                    <span id="random"><i class="fas fa-random icon"></i></span>
+                    <span id="back"><i class="fas fa-step-backward icon"></i></span>
+                    <span id="pause"><i class="far fa-pause-circle icon" style="font-size: 30px;"></i></span>
+	        		<span id="forward"><i class="fas fa-step-forward icon"></i></span>
+	        		
+	        		<span id="repeat"><i class="fas fa-repeat icon"></i></span>
+                    <div class="count-2">
+                        <p>3:27</p>
+                    </div>
+                </div>
+	     </div>
+	     <div id="right">
+	     	<div id="control">
+	     		<span id="playlist" class="icon" ><img src="image/icons/add-list.png"></span>
+	     		<span id="volume" class="icon"><img src="image/icons/speaker-24.png" height="15px" width="15px"></span>
+	     		<div class="sound">
+	     			<div class="progress thirty-five-percent mb-green">
+                        </div>
+                        <div class="bubble">
+                        </div>
+	     		</div>
+	     		<span id="fullscreen" class="icon"><img src="image/icons/fullscreen-enter-24.png" height="15px" width="15px"></span>
+	     	</div>
+	     </div>
+	     	
+	     	
+	</section>
+
+</body>
+</html>
