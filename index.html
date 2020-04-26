@@ -8,54 +8,99 @@
 	<script src="https://kit.fontawesome.com/5c14fb59bd.js" crossorigin="anonymous"></script>
 </head>
 <body>
+	<!-- start of the navigation section  -->
 	<div class="navigation">
 		<div>
 			<p class="logo"><img src="image/icons/music_icon.jpg" height="25px" width="25px"></p>
 			<span>NINJA <br>STUDIO</span>
 		</div>
-		<div>
-			<a href="#">Favorites</a>
-			<a href="#">Latest</a>
-			<a href="#">Artist</a>
-			<a href="#">Radio</a>
+		<div class="tab">
+			<div class="nav" >
+				<a href="#">Favorites</a>
+				<a href="#">Latest</a>
+				<a href="#">Artists</a>
+				<a href="#">Radio</a>
+			</div>
 		</div>
 		<div class="profile">
 			<img src="image/photo.jpg" height="50px" width="50px">
 		</div>
-		<div id="notification">
-			<span id="bell"><img src="image/icons/bell.png" height="20px" width="20px"></span>
-		</div>
+		<div class="ss">
+			<div id="notification">
+				<span id="bell"><img src="image/icons/bell.png" height="20px" width="20px"></span>
+			</div>
 
-		<div class="search-container">
-	    	<form action="/action_page.php">
-	    		<div id="search">
-	    			<input type="text" placeholder="Search.." name="search">
-	      			<button type="submit"><img src="image/icons/search.png"></button>
+			<div class="search-container">
+		    	<form action="/action_page.php">
+		    		<div id="search">
+		    			<input type="text" placeholder="Search.." name="search">
+		      			<button type="submit"><img src="image/icons/search.png"></button>
+		    		</div>
+		    	</form>
+			</div>
+		</div>
+			<div class="bars icon">
+			<!-- <a href="javascript:void(0);" class="icon" onclick="myFunction()"> -->
+	        	<a href=""><img src="image/icons/menu-4-24.png"></a>
+			</div>
 
-	    		</div>
-	      	
-	    	</form>
-		</div>
-				<div class="bars">
-			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
-	        <img src="image/icons/menu-4-24.png">
-		</div>
-		
-	  </a>
 	</div>
+
+	<!-- end of navigation section  -->
+
+	<!-- main section start here  -->
 	<div id="main">
+		<!-- left main starts -->
 		<div id="leftmain">
+			<!-- 1st section of main start -->
+			<div class="slide">
+				<div class="song">
+					<img src="image/songs/2.jpg" id="img1" >
+					<img src="image/songs/3.jpg" id="img2">
+					<img src="image/songs/song-3.jpg" id="img3">
+
+				</div>
+			</div>
+			<!-- 1st section of main end here -->
+
+			<!-- latest release section start -->
 			<section id="latest">
 				<div id="latest-release" class="popular mb50px">
-					<h1>Latest Release</h1>
-					<div class="new">
-						<div class="release">
-							<a href="data/unleashed.html"><img src="data/unleashed.jpeg"></a>
+					<h1 id="letest-rel-h1">Latest Release</h1>
+
+					<div id="release">
+						<div id="left-rel">
+							<img src="data/another.jpg" width="100px" height="100x">
+							<h4>In Another Life</h4>
+							<!-- <h6>Active child</h6> -->
+							<span><i class="fas fa-ellipsis-h"></i></span>
+
+						</div>
+						<div id="left-rel">
+							<img src="data/lambergini.jpg" width="100px" height="100x">
+							<h4>Lambergini</h4>
+							<span><i class="fas fa-ellipsis-h"></i></span>
 						</div>
 					</div>
+					<div id="release">
+						<div id="left-rel">
+							<img src="data/lover.jpeg" width="100px" height="100x">
+							<h4>Lover</h4>
+							<span><i class="fas fa-ellipsis-h"></i></span>
+						</div>
+						<div id="left-rel">
+							<img src="data/roar.jpg" width="100px" height="100x">
+							<h4>Roar</h4>
+							<span><i class="fas fa-ellipsis-h"></i></span>
+						</div>
+					</div>
+
 				</div>
 				
 			</section>
+			<!-- latest release section end  -->
+
+			<!-- latest artists section starts -->
 			<section id="pop">
 				<div id="artists" class="popular mb50px">
 					<h1>Popular Artists</h1>
@@ -123,37 +168,31 @@
 					</div>
 				</div>
 			</section>
+			<!-- popular artists section end -->
+
+			<!-- radio station section starts -->
 			<section id="radio">
 				<div id="radio-channels" class="popular mt50px">
 					<h1>Radio Stations</h1>
 					<div class="channels">
 						<div class="stations">
 							<img src="data/love.png">
-							<!-- <h4>Love</h4> -->
-						</div>
-						<div class="stations">
-							<img src="data/chill.png">
-							<!-- <h4>Chill</h4> -->
 						</div>
 						<div class="stations">
 							<img src="data/pop.png">
-							<!-- <h4>Pop</h4> -->
 						</div>
 						<div class="stations">
 							<img src="data/workout.png">
-							<!-- <h4>Workout</h4> -->
-						</div>
-						<div class="stations">
-							<!-- <img src="image/station/retro-2.jpg"> -->
-							<!-- <h4>Retro</h4> -->
 						</div>
 						<div class="stations">
 							<img src="data/rock.png">
-							<!-- <h4>Rock</h4> -->
 						</div>
 					</div>
 				</div>
 			</section>
+			<!-- radio station section end -->
+
+			<!-- mood section starts -->
 			<section id="moodtoday">
 				<div id="moods" class="popular mt50px">
 					<h1>Mood today</h1>
@@ -172,73 +211,412 @@
 					</div>
 				</div>
 			</section>
+			<!-- mood section ends -->
+
+			<!-- latest english songs section start -->
 			<section id="Latest-English">
 				<div id="english" class="popular mt50px">
 					<h1>Latest English</h1>
 					<div class="latesteng">
 						<div class="Status">
 							<img src="image/Latest-english/Latest-english-1.jpg" alt="">
+							<div class="songname">
+								<h4>Heartbeat </h4>
+                        		<p>Nov 11, 2019</p>
+							</div>
 						</div>
 						<div class="Status">
 							<img src="image/Latest-english/Latest-english-2.jpg" alt="">
+							<div class="songname">
+								<h4> Alive</h4>
+                        	    <p>Nov 16, 2019</p>
+							</div>
 						</div>
 						<div class="Status">
 							<img src="image/Latest-english/Latest-english-3.jpg" alt="">
+							<div class="songname">
+								<h4>Addicted</h4>
+                        		<p>Nov 26, 2019</p>
+							</div>
 						</div>
 						<div class="Status">
 							<img src="image/Latest-english/Latest-english-4.jpg" alt="">
+							<div class="songname">
+								<h4>Wolves</h4>
+                        		<p>Dec 13, 2019</p>
+							</div>
 						</div>
 						<div class="Status">
 							<img src="image/Latest-english/Latest-english-5.jpg" alt="">
+							<div class="songname">
+								<h4>Fireworl</h4>
+                        		<p>Dec 31, 2019</p>
+							</div>
 						</div>
 						<div class="Status">
 							<img src="image/Latest-english/Latest-english-6.jpg" alt="">
+							<div class="songname">
+								<h4>Roar</h4>
+                        		<p>Jan 1, 2020</p>
+							</div>
 						</div>
 					</div>
 				</div>
 			</section>
+			<!-- latest english section ends -->
+
+			<!-- latest hindi songs section starts -->
 			<section id="latest-hindi">
 				<div id="hindi" class="popular mt50px">
 					<h1>Latest Hindi</h1>
 					<div class="latesthindi">
 						<div class="Status">
 							<img src="image/Latest-hindi/Latest-hindi-1.jpeg" alt="">
+							<div class="songname">
+								<h4>Shart </h4>
+                        		<p>July 18, 2019</p>
+							</div>
 						</div>
 						<div class="Status">
 							<img src="image/Latest-hindi/Latest-hindi-2.jpeg" alt="">
+							<div class="songname">
+								<h4>Do Din</h4>
+                        		<p>Sept 16, 2019</p>
+							</div>
 						</div>
 						<div class="Status">
 							<img src="image/Latest-hindi/Latest-hindi-3.jpeg" alt="">
+							<div class="songname">
+								<h4>Totta</h4>
+                        		<p>Nov 11, 2019</p>
+							</div>
 						</div>
 						<div class="Status">
 							<img src="image/Latest-hindi/Latest-hindi-4.jpeg" alt="">
+							<div class="songname">
+								<h4>Makhna</h4>
+                        		<p>Dec 15, 2019</p>
+							</div>
 						</div>
 						<div class="Status">
 							<img src="image/Latest-hindi/Latest-hindi-5.jpeg" alt="">
+							<div class="songname">
+								<h4>Odhani</h4>
+                        		<p>Dec 31, 2019</p>
+							</div>
 						</div>
 						<div class="Status">
 							<img src="image/Latest-hindi/Latest-hindi-6.jpeg" alt="">
+							<div class="songname">
+								<h4>Dilbar</h4>
+                        		<p>Jan 1, 2020</p>
+							</div>
 						</div>
 					</div>
 				</div>
 			</section>
+			<!-- latest hindi song section ends -->
 		</div>
+		<!-- leftmain section ends -->
+
+		<!-- right or queue section starts here -->
 		<div id="rightmain">
-			
+			<div class="queue">
+				<div class="queue-heading">
+					<a href="playlist.html"><h1> Playlists</h1></a>
+					<span style="margin-top: -6vh; margin-right: 5vw; float: right; color: rgb(54, 191, 76);">Queue</span>
+					<h3 class="queue-dropdown" >
+						<input id="check01" type="checkbox" name="menu" />
+                        <label for="check01"><i class="material-icons"><span
+                                    style="float: left; cursor: pointer;"><img
+                                        src="image/icons/arrow.png" alt=""></span></i></label>
+                        <ul class="submenu">
+                            <a href="playlist.html"><li>Playlists</li></a>
+                            <li>
+                                <hr>
+                            </li>
+                            <li>Favourite Songs</li>
+                        </ul>
+					</h3>
+				</div>
+				<div class="items">
+					<ul>
+						<li>
+							<div class="container">
+								<span class="logo" >
+									<img src="data/prada.jpeg">
+								</span>
+								<span class="text">
+									prada
+								</span>
+								<span class="heart right1">
+									<i class="fas fa-heart"></i>
+								</span>		
+							</div>		
+						</li>
+						<li>
+						
+						<div class="container">
+							<span class="logo">
+								<img src="data/Queue-1.jpg">
+							</span>
+							<span class="text">
+								Firework
+							</span>
+							<span class="heart right1">
+								<i class="fas fa-heart"></i>
+							</span>		
+						</div>		
+						
+					</li>
+					<li>
+						
+						<div class="container">
+							<span class="logo">
+								<img src="data/Queue-2.jpg">
+							</span>
+							<span class="text">
+								Roar
+							</span>
+							<span class="heart right1">
+								<i class="fas fa-heart"></i>
+							</span>		
+						</div>		
+						
+					</li>
+					<li>
+						
+						<div class="container">
+							<span class="logo">
+								<img src="data/Queue-3.jpg">
+							</span>
+							<span class="text">
+								Titanic
+							</span>
+							<span class="heart right1">
+								<i class="fas fa-heart"></i>
+							</span>		
+						</div>		
+						
+					</li>
+					<li>
+						
+						<div class="container">
+							<span class="logo">
+								<img src="data/tareefan.jpeg">
+							</span>
+							<span class="text">
+								Tareefan
+							</span>
+							<span class="heart right1">
+								<i class="fas fa-heart"></i>
+							</span>		
+						</div>		
+						
+					</li>
+					<li>
+						
+						<div class="container">
+							<span class="logo">
+								<img src="data/Queue-4.jpg">
+							</span>
+							<span class="text">
+								Escape
+							</span>
+							<span class="heart right1">
+								<i class="fas fa-heart"></i>
+							</span>		
+						</div>		
+						
+					</li>
+					<li>
+						
+						<div class="container">
+							<span class="logo">
+								<img src="data/Queue-5.jpg">
+							</span>
+							<span class="text">
+								Dilber
+							</span>
+							<span class="heart right1">
+								<i class="fas fa-heart"></i>
+							</span>		
+						</div>		
+						
+					</li>
+					<li>
+						
+						<div class="container">
+							<span class="logo">
+								<img src="data/garmi.jpeg">
+							</span>
+							<span class="text">
+								Garmi
+							</span>
+							<span class="heart right1">
+								<i class="fas fa-heart"></i>
+							</span>		
+						</div>		
+						
+					</li>
+					<li>
+						
+						<div class="container">
+							<span class="logo">
+								<img src="data/lc.jpg">
+							</span>
+							<span class="text">
+								Photo
+							</span>
+							<span class="heart right1">
+								<i class="fas fa-heart"></i>
+							</span>		
+						</div>		
+						
+					</li>
+					<li>
+						
+						<div class="container">
+							<span class="logo">
+								<img src="data/ankhmaare.jpg">
+							</span>
+							<span class="text">
+								Aankh maare
+							</span>
+							<span class="heart right1">
+								<i class="fas fa-heart"></i>
+							</span>		
+						</div>		
+						
+					</li>
+					<li>
+						
+						<div class="container">
+							<span class="logo">
+								<img src="data/vaaste.jpg">
+							</span>
+							<span class="text">
+								Vaaste
+							</span>
+							<span class="heart right1">
+								<i class="fas fa-heart"></i>
+							</span>		
+						</div>		
+						
+					</li>
+					<li>
+						
+						<div class="container">
+							<span class="logo">
+								<img src="data/teraghata.jpg">
+							</span>
+							<span class="text">
+								Tera ghaata
+							</span>
+							<span class="heart right1">
+								<i class="fas fa-heart"></i>
+							</span>		
+						</div>		
+						
+					</li>
+					<li>
+						
+						<div class="container">
+							<span class="logo">
+								<img src="data/despacito.jpeg">
+							</span>
+							<span class="text">
+								Despacito
+							</span>
+							<span class="heart right1">
+								<i class="fas fa-heart"></i>
+							</span>		
+						</div>		
+						
+					</li>
+					<li>
+						
+						<div class="container">
+							<span class="logo">
+								<img src="data/bekhayali.jpg">
+							</span>
+							<span class="text">
+								Bekhayali
+							</span>
+							<span class="heart right1">
+								<i class="fas fa-heart"></i>
+							</span>		
+						</div>		
+						
+					</li>
+					<li>
+						
+						<div class="container">
+							<span class="logo">
+								<img src="data/coca.jpg">
+							</span>
+							<span class="text">
+								Coco cola
+							</span>
+							<span class="heart right1">
+								<i class="fas fa-heart"></i>
+							</span>		
+						</div>		
+						
+					</li>
+					<li>
+						
+						<div class="container">
+							<span class="logo">
+								<img src="data/ks.jpg">
+							</span>
+							<span class="text">
+								Chahne lage
+							</span>
+							<span class="heart right1">
+								<i class="fas fa-heart"></i>
+							</span>		
+						</div>		
+						
+					</li>
+					<li>
+						
+						<div class="container">
+							<span class="logo">
+								<img src="data/tareefan.jpeg">
+							</span>
+							<span class="text">
+								Tareefan
+							</span>
+							<span class="heart right1">
+								<i class="fas fa-heart"></i>
+							</span>		
+						</div>		
+						
+					</li>
+					</ul>
+				</div>
+			</div>
 		</div>
 	</div>
+   <!-- queue and right main end here -->
+	
 
 	<!-- footer begin -->
 	<section id="footer">
+		<!-- left side of footer starts-->
 		<div id="left">
 	        <div id="foot">
-	        	<img src="image/faded.jpeg" height="50" width="50">
+	        	<img src="image/faded.jpeg">
 	        	<span>Spectre</span>
 	        	<span id="name2">Alan Walker</span>
 	        	<span id="icon"><i class="fas fa-heart"></i></span>&emsp;&emsp;
 	        	<span id="icon"><i class="fas fa-ban"></i></span>
 	        </div>
 	     </div>
+	     <!--left side of footer ends  -->
+
+	     <!-- middle side of footer starts -->
 	     <div id="mid">
 	     	<div class="timer">
                     <div class="count-1">
@@ -253,7 +631,7 @@
 
                     <span id="random"><i class="fas fa-random icon"></i></span>
                     <span id="back"><i class="fas fa-step-backward icon"></i></span>
-                    <span id="pause"><i class="far fa-pause-circle icon" style="font-size: 30px;"></i></span>
+                    <span id="pause"><i class="far fa-pause-circle icon"></i></span>
 	        		<span id="forward"><i class="fas fa-step-forward icon"></i></span>
 	        		
 	        		<span id="repeat"><i class="fas fa-repeat icon"></i></span>
@@ -262,6 +640,8 @@
                     </div>
                 </div>
 	     </div>
+	     <!-- middle side of footer ends -->
+	     
 	     <div id="right">
 	     	<div id="control">
 	     		<span id="playlist" class="icon" ><img src="image/icons/add-list.png"></span>
@@ -274,7 +654,7 @@
 	     		</div>
 	     		<span id="fullscreen" class="icon"><img src="image/icons/fullscreen-enter-24.png" height="15px" width="15px"></span>
 	     	</div>
-	     </div>
+	     </div> 
 	     	
 	     	
 	</section>
