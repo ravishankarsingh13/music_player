@@ -687,12 +687,7 @@ z-index: 1;
 	#leftmain{
 		width: 100%;
 	}
-
-	#left-rel h4{
-		display: block;
-		margin-left: 18%;
-	}
-	#img1
+#img1
 {
   height:150px !important;
   width:150px !important;
@@ -722,4 +717,17 @@ z-index: 1;
 	.ss{
 		display: none;
 	}
+  #left{
+    width: 100%;
+  }
+  #mid{
+    margin-left: 20%;
+
+  }
+  #mid .icon{
+  font-size: 100%;
+  position: absolute;
+  bottom: 33px;
+  color: #cacaca;
+}
 }
