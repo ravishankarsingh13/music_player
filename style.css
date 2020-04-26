@@ -730,4 +730,28 @@ z-index: 1;
   bottom: 33px;
   color: #cacaca;
 }
+.count-1{
+  margin-left: 30vw;
+}
+#foot #icon{
+  display: none;
+
+}
+#img1
+{
+  height:150px !important;
+  width:130px !important;
+  /*position: absolute;*/
+}
+#img2
+{
+  left: 170px !important;
+  height:190px;
+  width:180px;
+}
+#img3
+{
+  height:150px !important;
+  width:130px !important;
+}
 }
