@@ -743,5 +743,8 @@ z-index: 1;
   display: none;
 
 }
+#slide{
+  margin:auto;
+}
 }
 /*media query end here*/
